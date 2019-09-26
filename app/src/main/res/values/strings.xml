@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">德藏信业</string>
+    <string name="alert_Net_NotWork">该功能需要联网状态下进行。请确认网络设置正确后，再重试。</string>
+</resources>
