@@ -83,5 +83,6 @@ dependencies {
     implementation ('com.thoughtworks.xstream:xstream:1.4.7') {
             exclude group: 'xmlpull', module: 'xmlpull'
         }
+    compile project(path: ':appintro')
 
 }
