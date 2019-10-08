@@ -14,7 +14,7 @@ internal class PagerAdapter(
 
     private val retainedFragments: SparseArray<Fragment> = SparseArray()
 
-    override fun getItem(position: Int): Fragment? {
+    override fun getItem(position: Int): Fragment {
         return if (!fragments.isEmpty()) {
             // Check if the fragment at this position has been retained by the PagerAdapter
             if (retainedFragments.get(position) != null)
@@ -22,7 +22,7 @@ internal class PagerAdapter(
             else
                 fragments[position]
 
-        } else null
+        } else Fragment()
     }
 
     override fun getCount() = this.fragments.size

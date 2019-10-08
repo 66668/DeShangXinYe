@@ -43,6 +43,11 @@ android {
             signingConfig signingConfigs.config
         }
     }
+//    Invoke-customs are only supported starting with Android O (--min-api 26)问题解决
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
