@@ -35,18 +35,18 @@ public class IntroAct extends AppIntro {
         super.onCreate(savedInstanceState);
 
         SliderPage sliderPage1 = new SliderPage();
-        sliderPage1.setBgDrawable(R.mipmap.ad_01);
+        sliderPage1.setBgDrawable(R.mipmap.ad_02);
         addSlide(AppIntroFragment.newInstance(sliderPage1));
 
         SliderPage sliderPage2 = new SliderPage();
-        sliderPage2.setBgDrawable(R.mipmap.ad_02);
+        sliderPage2.setBgDrawable(R.mipmap.ad_01);
         addSlide(AppIntroFragment.newInstance(sliderPage2));
 
         SliderPage sliderPage3 = new SliderPage();
         sliderPage3.setBgDrawable(R.mipmap.ad_03);
         addSlide(AppIntroFragment.newInstance(sliderPage3));
 
-        handler.postDelayed(task, 5000);
+        handler.postDelayed(task, 4000);
     }
 
     @Override

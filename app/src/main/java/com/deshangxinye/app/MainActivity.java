@@ -90,6 +90,7 @@ public class MainActivity extends BaseAct {
         header.put("dcapp", "android");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);                       //可执行js
+
         webSettings.setDefaultTextEncodingName("UTF-8");              //设置默认的文本编码名称，以便在解码html页面时使用
         webSettings.setAllowContentAccess(true);                      //启动或禁用WebView内的内容URL访问
         webSettings.setAppCacheEnabled(false);                        //设置是否应该启用应用程序缓存api
@@ -101,7 +102,7 @@ public class MainActivity extends BaseAct {
         webSettings.setLoadsImagesAutomatically(true);                //设置WebView是否应该载入图像资源
         webSettings.setAllowFileAccess(true);                         //启用或禁用WebView内的文件访问
         webSettings.setDomStorageEnabled(true);                       //设置是否启用了DOM存储API,默认为false
-
+        webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);//开启硬件加速
         //使网页用WebView打开
         webView.setWebViewClient(new WebViewClient() {
 
