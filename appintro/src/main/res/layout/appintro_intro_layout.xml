@@ -52,6 +52,7 @@
         style="@style/AppIntroButtonStyleCompat"
         android:contentDescription="@string/app_intro_back_button"
         android:rotation="180"
+        android:textColor="@color/appintro_icon_tint"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,6 +72,7 @@
         android:id="@+id/next"
         style="@style/AppIntroButtonStyleCompat"
         android:contentDescription="@string/app_intro_next_button"
+        android:textColor="@color/appintro_icon_tint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_appintro_next" />
